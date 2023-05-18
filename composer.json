@@ -20,7 +20,7 @@
 
     "require": {
         "php": ">=8.0",
-        "comely-io/data-types": "^1.0",
+        "comely-io/data-types": "dev-master",
         "guzzlehttp/guzzle": "^7.2",
         "iexbase/web3.php": "^2.0.1",
         "kornrunner/secp256k1": "^0.2",
@@ -29,9 +29,17 @@
         "ext-bcmath": "*"
     },
 
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/n3omaster/data-types.git"
+        }
+    ],
+
     "require-dev": {
         "phpunit/phpunit": "^6.0"
     },
+
     "autoload": {
         "psr-4": {
             "IEXBase\\TronAPI\\": "src"
